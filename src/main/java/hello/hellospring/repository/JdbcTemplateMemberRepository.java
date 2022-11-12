@@ -55,7 +55,6 @@ public class JdbcTemplateMemberRepository implements MemberRepository{
 
     private RowMapper<Member> memberRowMapper() {
         return (rs, rowNum) -> {
-
             Member member = new Member();
             member.setId(rs.getLong("id"));
             member.setName(rs.getString("name"));
